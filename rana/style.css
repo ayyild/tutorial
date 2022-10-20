@@ -1,0 +1,171 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+}
+
+body{
+    background-color: var(--g1);
+   
+    
+}
+
+:root {
+    --g1: rgb(228, 228, 228);
+    --g2: rgb(174, 174, 174);
+    --g3: rgb(144, 144, 144);
+    --g4: rgb(92, 92, 92);
+    --g5: rgb(56, 56, 56);
+}
+
+.top {
+    border-style: dashed;
+    border-color: var(--g3);
+    border-width: 1px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255,255,255,0.8) ;
+    width: 66%;
+}
+
+.left-side {
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+
+.right-side {
+    margin-right: 100px;
+    margin-top: 60px;
+
+}
+
+h1 {
+    font-style: normal;
+    font-size: 1.8em;
+    color: var(--g5);
+    font-weight: 300;
+    padding-bottom: px;
+}
+
+h2 {
+    font-weight: 100;
+    color: var(--g5);
+    font-style: italic;
+    font-size: 1em;
+}
+h3{
+    color: g3;
+    font-weight: 300;
+    font-size: 1.4em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+h4{
+    color: g4;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center; 
+    font-style:italic; 
+}
+
+h5{
+    color: g4;
+    font-weight: 300;
+    font-size: 1em;
+    text-align: center;
+    font-style:italic;    
+}
+
+h6{
+    color: g3;
+    font-weight: 300;
+    font-size: 0.8em;
+    text-align: center;  
+}
+
+a {
+    text-decoration: none;
+    color: var(--g5);
+    padding-right: 100px;
+    font-weight: 100;
+
+}
+
+.box-color{
+    width: 66%;
+    height: 20px;
+    background-color: rgb(144, 144, 144);
+    padding-left: 20%;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-gutter: stable;
+    max-width: 100%;
+    overflow-x: scroll;
+
+}
+
+.box {
+ 
+    width: 18%;
+    min-width: 100px;
+    border-style: dashed;
+    border-color: var(--g3);
+    border-width: 1px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 0px 10px 10px;
+    max-height: 750px;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+    background-color: rgb(255,255,255,0.9);
+
+    
+    
+}
+
+.poster{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    text-align:justify;
+    font-weight:100;
+    font-size:0.9em;
+}
+
+.box::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+      
+    }
+    .box{
+        width: 350px;
+    }
+  }
+
